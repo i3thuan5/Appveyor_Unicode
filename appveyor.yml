@@ -5,18 +5,21 @@ environment:
   APP_NAME: 漢字 kah Lô-má-jī
 
 init:
+  - ps: echo "== init =="
   - ps: chcp
   - ps: echo "${env:APP_NAME}"
   - ps: chcp 65001
   - ps: echo "${env:APP_NAME}"
 
 install:
+  - ps: echo "== install =="
   - ps: chcp
   - ps: echo "${env:APP_NAME}"
   - ps: chcp 65001
   - ps: echo "${env:APP_NAME}"
 
 build_script:
+  - ps: echo "== build_script =="
   - ps: chcp
   - ps: echo "${env:APP_NAME}"
   - ps: chcp 65001
