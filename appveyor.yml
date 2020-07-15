@@ -13,15 +13,12 @@ init:
 install:
   - ps: chcp
   - ps: echo "${env:APP_NAME}"
-  # - ps: . cmd.bat # The build phase is set to "MSBuild" mode (default), but no Visual Studio project or solution files were found in the root directory. If you are not building Visual Studio project switch build mode to "Script" and provide your custom build command.
   - ps: chcp 65001
   - ps: echo "${env:APP_NAME}"
-  # - ps: . cmd.bat # The build phase is set to "MSBuild" mode (default), but no Visual Studio project or solution files were found in the root directory. If you are not building Visual Studio project switch build mode to "Script" and provide your custom build command.
 
-build:
+build_script:
   - ps: chcp
   - ps: echo "${env:APP_NAME}"
-  # - ps: . cmd.bat # The build phase is set to "MSBuild" mode (default), but no Visual Studio project or solution files were found in the root directory. If you are not building Visual Studio project switch build mode to "Script" and provide your custom build command.
   - ps: chcp 65001
   - ps: echo "${env:APP_NAME}"
   # - ps: . cmd.bat # The build phase is set to "MSBuild" mode (default), but no Visual Studio project or solution files were found in the root directory. If you are not building Visual Studio project switch build mode to "Script" and provide your custom build command.
