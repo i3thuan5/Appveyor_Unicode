@@ -7,10 +7,8 @@ environment:
 init:
   - ps: chcp
   - ps: echo "${env:APP_NAME}"
-  - ps: . cmd.bat
   - ps: chcp 65001
   - ps: echo "${env:APP_NAME}"
-  - ps: . cmd.bat
 
 install:
   - ps: chcp
