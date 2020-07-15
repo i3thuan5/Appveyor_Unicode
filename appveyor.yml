@@ -7,10 +7,8 @@ environment:
 init:
   - ps: chcp
   - ps: echo "${env:APP_NAME}"
-  - ps: chcp 65001 && echo "${env:APP_NAME}"
   - ps: chcp 65001
   - ps: echo "${env:APP_NAME}"
-  - ps: chcp 65001 && echo "${env:APP_NAME}"
 
 install:
   - ps: chcp
