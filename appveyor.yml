@@ -1,0 +1,21 @@
+version: '{branch} build {build}'
+image: Visual Studio 2017
+
+environment:
+  APP_NAME: 漢字 kah Lô-má-jī
+
+init:
+  - ps: chcp
+  - ps: echo "${env:APP_NAME}"
+  - ps: chcp 65001 && echo "${env:APP_NAME}"
+  - ps: chcp 65001
+  - ps: echo "${env:APP_NAME}"
+  - ps: chcp 65001 && echo "${env:APP_NAME}"
+
+install:
+  - ps: chcp
+  - ps: echo "${env:APP_NAME}"
+  - ps: chcp 65001 && echo "${env:APP_NAME}"
+  - ps: chcp 65001
+  - ps: echo "${env:APP_NAME}"
+  - ps: chcp 65001 && echo "${env:APP_NAME}"
