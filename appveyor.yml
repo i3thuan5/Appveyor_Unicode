@@ -6,22 +6,10 @@ environment:
 
 init:
   - ps: echo "== init =="
-  - ps: chcp
   - ps: echo "${env:APP_NAME}"
-  - ps: chcp 65001
-  - ps: echo "${env:APP_NAME}"
-
-install:
-  - ps: echo "== install =="
-  - ps: chcp
-  - ps: echo "${env:APP_NAME}"
-  - ps: chcp 65001
+  - echo "${env:APP_NAME}"
   - ps: echo "${env:APP_NAME}"
 
 build_script:
   - ps: echo "== build_script =="
-  - ps: chcp
   - ps: echo "${env:APP_NAME}"
-  - ps: chcp 65001
-  - ps: echo "${env:APP_NAME}"
-  # - ps: . cmd.bat # The build phase is set to "MSBuild" mode (default), but no Visual Studio project or solution files were found in the root directory. If you are not building Visual Studio project switch build mode to "Script" and provide your custom build command.
